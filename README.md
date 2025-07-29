@@ -1,12 +1,82 @@
-# React + Vite
+# 🖥️ Team Pulse Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and intuitive productivity monitoring dashboard for team leads and team members, built using **React**, **Redux Toolkit**, and **Tailwind CSS**. It allows real-time status updates, task assignment, progress tracking, and insightful visualization — all without a backend.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Project Overview
 
-## Expanding the ESLint configuration
+The **Team Pulse Dashboard** is designed to simulate a real-time productivity monitoring tool for distributed teams. It features two distinct user roles:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Team Lead Portal**
+  - View all team members with their status (Working, Break, Meeting, Offline)
+  - Assign tasks with due dates
+  - Monitor progress visually via task completion and pie charts
+  - Sort members by last activity time
+
+- **Team Member Portal**
+  - Login and update your own work status
+  - View assigned tasks and update progress (in 10% increments)
+  - Automatically marks task complete at 100%
+
+Initial member data is fetched from [`randomuser.me`](https://randomuser.me/), mimicking a live team structure.
+
+---
+
+## 🎯 Features
+🔄 Auto-reset member status to “Offline” after 10 minutes of inactivity.
+
+📊 Pie chart of current team status distribution.
+
+🌗 Dark mode toggle with Tailwind.
+
+⏱️ Sort members by lastActive.
+
+🔐 Role switcher (Team Lead / Team Member).
+
+🔍 Member filtering by status.
+
+🧠 Smooth UI with modular components.
+
+
+
+## 🚀 Tech Stack
+
+| Layer        | Technology |
+|--------------|------------|
+| Frontend     | React + Vite |
+| Styling      | Tailwind CSS |
+| State Mgmt   | Redux Toolkit |
+| Charting     | Recharts |
+| Icons/Design | Lucide-react, shadcn/ui |
+| Data Source  | [randomuser.me](https://randomuser.me/) API (mock data only) |
+
+---
+
+## 🛠️ Setup Instructions
+
+### 1. Clone the repo
+```bash
+git clone https://github.com/your-username/team-pulse-dashboard.git
+cd team-pulse-dashboard
+```
+
+### 2. Install dependencies
+```bash
+npm install
+```
+
+### 2. Run the project
+```bash
+npm run dev
+```
+Open http://localhost:5173 in your browser.
+
+## 📷 Screenshots
+### 🔵 Lead Portal
+
+![Lead Portal Screenshot](./screenshots/lead1.png)
+![Member Portal Screenshot](./screenshots/lead2.png)
+
+### 🟢 Member Portal
+![Member Portal Screenshot](./screenshots/Member.png)
