@@ -75,8 +75,8 @@ Open http://localhost:5173 in your browser.
 ## 📷 Screenshots
 ### 🔵 Lead Portal
 
-![Lead Portal Screenshot](./screenshots/lead1.png)
-![Member Portal Screenshot](./screenshots/lead2.png)
+![Lead Portal Screenshot](./screenshots/Lead1.png)
+![Member Portal Screenshot](./screenshots/Lead2.png)
 
 ### 🟢 Member Portal
 ![Member Portal Screenshot](./screenshots/Member.png)
